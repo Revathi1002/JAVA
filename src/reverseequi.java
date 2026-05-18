@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class reverseequi {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        int n=sc.nextInt();
+        int a=2;
+        for(int i=n;i>=1;i--)
+        {
+            for (int k=n;k>i;k--)
+            {
+                System.out.print(" ");
+            }
+            for (int j=1;j<i;j++)
+            {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+
+}
